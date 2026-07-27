@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>html Grid</title>
+    <style>
+      .div {
+        text-align: center;
+        font-family:arial;
+        display: grid;
+        vertical-align:center;
+      }
+    </style>
+  </head>
+  <body style="padding-bottom:200000px;">
+    <div class="div" style="grid-template-columns:100px 100px";>
+      <div style="
+      background-color: lightblue;
+      margin-right: 2px;">
+        div 1
+      </div>
+      <div style="background-color: lightpink;">
+        div 2
+      </div>
+    </div>
+
+    <div  class="div" style="
+    margin-top:30px;
+    grid-template-columns:100px 100px 200px;
+    ">
+      <div style="
+      background-color: lightpink;
+      margin-right: 2px;">
+        100px<p>-</p>
+      </div>
+      <div style="background-color: lightblue;">
+        100px
+      </div>
+      <div style="
+      background-color: lightpink;
+      margin-left: 2px;">
+        100px<p>-</p>
+      </div>
+      <div style="background-color: lightblue;">
+        100px
+      </div>
+    </div>
+
+    <div class="div" style="
+    margin-top:30px;
+    grid-template-columns:100px 1fr;
+    ">
+    <div style="
+      background-color: lightpink;
+      margin-right: 2px;">
+        100px
+    </div>
+      <div style="background-color: lightblue;">
+        1fr
+      </div>
+    </div>
+
+    <div class="div" style="
+    margin-top:30px;
+    grid-template-columns:100px 1fr 2fr;
+    ">
+    <div style="
+      background-color: lightpink;
+      margin-right: 2px;">
+        100px
+    </div>
+    <div style="background-color: lightblue;">
+        1fr
+    </div>
+    <div style="background-color: lightpink;">
+        2fr
+    </div>
+    </div>
+
+    <div class="div" style="
+    margin-top:30px;
+    grid-template-columns:1fr 1fr 1fr;
+    ">
+    <div style="
+    background-color: lightpink;
+    height:200px;">
+        1fr</div>
+    <div style="background-color: lightblue;">
+        1fr</div>
+    <div style="background-color: lightpink;">
+        2fr</div>
+    <div style="background-color: lightblue;">
+        1fr</div>
+    <div style="background-color: lightpink;">
+        2fr</div>
+    <div style="background-color: lightblue;height:200px;">
+        1fr</div>
+    </div>
+  </body>
+</html>
